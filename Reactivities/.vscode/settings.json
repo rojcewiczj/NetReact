@@ -1,0 +1,4 @@
+{
+    "omnisharp.defaultLaunchSolution": "",
+    "csharp.semanticHighlighting.enabled": true
+}
