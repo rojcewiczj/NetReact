@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aSdbkV76Le6aW3JEVuTWADTXCOWM1lKzi3cuKIwbx8P6fP+zwG0uvvDjpNFMAZWqbivthHK7dpWFbZnjQ9yjxQ==",
+  "dgSpecHash": "DXrDO7uUTH9KRQE1Vho0mh0cK0MJOu2tUXblOkrf1tAiMKgR1kKH7KbLWkwOJQX4yWQOUB4VOLsb9MV9vkmP8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rojce\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.1\\microsoft.data.sqlite.core.5.0.1.nupkg.sha512",
     "C:\\Users\\rojce\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
