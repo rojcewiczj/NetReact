@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AaMEoiTKr8S1qqx3AQr7xfjzOjGujSjKovoF0B0pXaFyVWG8Pgu2h2scxs4msxXeSIzJ7e+wT5zm7MRiiVsxxA==",
+  "dgSpecHash": "/OcHNO5Lz5c9tGUdx19ziVW9FZP0xfs04hkvFyzR8ulPgxNOWaieLnzqT5mvca4tTJxm3dqG/tx4IMbN4ga/3A==",
   "success": true,
   "projectFilePath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rojce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\rojce\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\rojce\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

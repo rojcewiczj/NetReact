@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+l9X7pPSaNiTZYFnYPoQ4k65+oZqd12vngJ4nh1sEIfsNDvb1YZlXITUuv91cRdXusxMJlHydIvaq5RLk7H3lg==",
+  "dgSpecHash": "GVcFJLj6LBSI1RepgWs8OhDP8GF55sgO2orRQDUVMHdczcjJv+6Xkv/oWbSrlKLUYHDnBEMadPSvmcNPdRGy7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rojce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\rojce\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\rojce\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.1\\microsoft.data.sqlite.core.5.0.1.nupkg.sha512",
     "C:\\Users\\rojce\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\rojce\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",

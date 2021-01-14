@@ -71,3 +71,5 @@ C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\runti
 C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\Humanizer.dll
 C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\MediatR.dll
+C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
