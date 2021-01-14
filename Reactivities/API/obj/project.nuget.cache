@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ECkLzqMGymoi1YmxlAR6IIQiB9Ivozo8upzKhIwatr8+wESgCdEGMfmJG7zEV4/OIQUqK/n0VpJ+ihBF6G3xfA==",
+  "dgSpecHash": "zCXdqL6R6WbVzHNbQZkBRhpt7Tm3BQdiVooxIEqb5wFNT7tWpYDcyU8aKvzSEVw5gKfuxeMhPsGCQmzn8cUTgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rojce\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\rojce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
