@@ -44,10 +44,7 @@ namespace API
             
             services.AddControllers();
             services.AddMediatR(typeof(List.Handler).Assembly);
-            services.AddSwaggerGen(c =>
-             {
-               c.SwaggerDoc("v1", new OpenApiInfo { Title = "api", Version = "v1" });
-           });
+
             
         }
 
@@ -57,8 +54,7 @@ namespace API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
+               
             }
             app.UseCors("CorsPolicy");
             // app.UseHttpsRedirection();
