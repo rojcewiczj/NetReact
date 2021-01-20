@@ -1,6 +1,6 @@
 import React, {useState, useEffect, Fragment} from 'react';
 import 'semantic-ui-css/semantic.min.css'
-import {Header, Icon, List, Container} from 'semantic-ui-react'
+import {Container} from 'semantic-ui-react'
 import axios from 'axios';
 import { timeStamp } from 'console';
 import { ImportsNotUsedAsValues } from 'typescript';
@@ -24,7 +24,19 @@ const App = () => {
     setSelectedActivity(null);
     setEditMode(true);
   }
+ 
+  const handleCreateActivity = (activity: IActivity) => {
+    setActivities([...activities, activity])
+    setSelectedActivity(activity);
+    setEditMode(false);
+  }
 
+  const handleEditActivity = (activity: IActivity) => {
+    setActivities([...activities.filter(a => a.id !== activity.id), activity])
+    setSelectedActivity(activity);
+    setEditMode(false);
+    
+  }
   useEffect(() =>{
     axios.get<IActivity[]>('http://localhost:5000/api/activities')
       .then((response) => {
@@ -37,7 +49,7 @@ const App = () => {
     <Fragment>
    <NavBar openCreateForm={handleOpenCreateForm}/>
    <Container style={{marginTop: '7em'}}>
-    <ActivityDashboard activities={activities} selectActivity={handleSelectActivity} selectedActivity={selectedActivity!} setSelectedActivity = {setSelectedActivity} editMode={editMode} setEditMode={setEditMode}/>
+    <ActivityDashboard createActivity ={handleCreateActivity} editActivity={handleEditActivity} activities={activities} selectActivity={handleSelectActivity} selectedActivity={selectedActivity!} setSelectedActivity = {setSelectedActivity} editMode={editMode} setEditMode={setEditMode}/>
     </Container>
     </Fragment>
   );
