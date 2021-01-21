@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, ButtonGroup, Card, Icon, Image } from 'semantic-ui-react'
+import { Button, ButtonGroup, Card, Image } from 'semantic-ui-react'
 import { IActivity } from '../../../app/models/activity';
 
 interface IProps {

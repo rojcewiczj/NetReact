@@ -1,4 +1,4 @@
-import React, {ChangeEvent, FormEvent, useState} from 'react'
+import React, { FormEvent, useState} from 'react'
 import { Segment, Form, FormInput, FormTextArea, Button } from 'semantic-ui-react'
 import { IActivity } from '../../../app/models/activity';
 import {v4 as uuid} from 'uuid';
@@ -51,7 +51,7 @@ const ActivityForm: React.FC<IProps> = ({setEditMode, activity: initialFormState
           <FormInput onChange={handleInputChange} name="title" placeholder='Title' value={activity.title}/>
           <FormTextArea onChange={handleInputChange} name="description" rows={2} placeholder='Description'value={activity.description}/>
           <FormInput onChange={handleInputChange} name="category" placeholder='Category' value={activity.category}/>
-          <FormInput onChange={handleInputChange} name="date" type='date' placeholder='Date' value={activity.date}/>
+          <FormInput onChange={handleInputChange} name="date" type='datetime-local' placeholder='Date' value={activity.date}/>
           <FormInput onChange={handleInputChange} name="city" placeholder='City'value={activity.city}/>
           <FormInput onChange={handleInputChange} name="venue" placeholder='Venue' value={activity.venue}/>
           <Button floated='right' positive type='submit' content='Submit' />
