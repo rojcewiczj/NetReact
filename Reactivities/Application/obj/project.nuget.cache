@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eBgVt1HXw+2TDYf2w7xpYRLZLywVgZD2WyZnOXgBjUCGruLsX8H7nzsWzlwqNofginlZeS8YGYWFTucTH/h5FQ==",
+  "dgSpecHash": "19xIjLCM7co98FOR743loV43k/i3455iICDTqsZwCgzDs4ncZH4Eui1HbuBVQ0WYj2lyLiIpJxJXeYoBWee3Bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rojce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\rojce\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

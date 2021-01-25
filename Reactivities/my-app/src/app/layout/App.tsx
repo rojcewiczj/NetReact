@@ -8,6 +8,11 @@ import agent from '../api/agent';
 import LoadingComponent from './LoadingComponent';
 import ActivityStore from '../stores/activityStore';
 import { Observer, observer } from 'mobx-react-lite';
+import { Route } from 'react-router-dom';
+import HomgePage from '../../features/home/HomePage';
+import ActivityList from '../../features/activities/dashboard/ActivityList';
+import ActivityForm from '../../features/activities/form/ActivityForm';
+import ActivityDetails from '../../features/activities/details/ActivityDetails';
 
 
 const App = () => {
@@ -18,35 +23,8 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [target, setTarget] = useState('');
-
-
-  const handleSelectActivity =(id: string) => {
-    setSelectedActivity(activities.filter(a => a.id === id)[0])
-    setEditMode(false);
-  }
-  
-  const handleOpenCreateForm = () => {
-    setSelectedActivity(null);
-    setEditMode(true);
-  }
- 
-  const handleCreateActivity = (activity: IActivity) => {
-    setSubmitting(true);
-    agent.Activities.create(activity).then(()=>{
-    setActivities([...activities, activity])
-    setSelectedActivity(activity);
-    setEditMode(false);
-  }).then(() => setSubmitting(false));
-  }
-
-  const handleEditActivity = (activity: IActivity) => {
-    agent.Activities.update(activity).then(()=>{
-    setActivities([...activities.filter(a => a.id !== activity.id), activity])
-    setSelectedActivity(activity);
-    setEditMode(false);
-  })
     
-  }
+  
 
   const handleDeleteActivity =(event: SyntheticEvent<HTMLButtonElement>, id: string) => {
     setSubmitting(true);
@@ -57,27 +35,19 @@ const App = () => {
   }
  
   useEffect(() =>{
-      activityStore.loadActivites();
+      activityStore.loadActivites()
    }, []);
 
    if(activityStore.loadingInitial) return <LoadingComponent content='Loading Activities' />
-  activityStore.activities.map(a => console.log(a))
+
   return (
     <Fragment>
-   <NavBar openCreateForm={handleOpenCreateForm}/>
+   <NavBar/>
    <Container style={{marginTop: '7em'}}>
-    <ActivityDashboard 
-
-    activities={activityStore.activities} 
-    createActivity ={handleCreateActivity} 
-    editActivity={handleEditActivity} 
-    selectActivity={handleSelectActivity} 
-    setSelectedActivity = {setSelectedActivity} 
-    setEditMode={setEditMode}
-    deleteActivity={handleDeleteActivity}
-    submitting = {submitting}
-    target = {target}
-    />
+     <Route exact path='/' component={HomgePage}/>
+     <Route path='/activities' component={ActivityDashboard}/>
+     <Route path='/createActivities' component ={ActivityForm} />
+     <Route path ='/activities/:id' component={ActivityDetails} />
     </Container>
     </Fragment>
   );

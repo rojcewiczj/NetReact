@@ -1,5 +1,6 @@
 import { observer } from 'mobx-react-lite'
 import React, { SyntheticEvent, useContext } from 'react'
+import { Link } from 'react-router-dom'
 import {Item, Button, Label, Segment} from 'semantic-ui-react'
 import { IActivity } from '../../../app/models/activity'
 import ActivityStore from '../../../app/stores/activityStore'
@@ -14,11 +15,11 @@ interface IProps {
 
 const ActivityList: React.FC<IProps> = ({ deleteActivity, submitting, target}) => {
     const activityStore = useContext(ActivityStore);
-    const {activities, selectActivity} = activityStore;
+    const {activitiesByDate, selectActivity} = activityStore;
     return(
       <Segment clearing>
         <Item.Group divided>
-            {activities.map(activity =>(
+            {activitiesByDate.map(activity =>(
              <Item>
             
             <Item.Content>
@@ -29,7 +30,7 @@ const ActivityList: React.FC<IProps> = ({ deleteActivity, submitting, target}) =
                 <div>{activity.city}, {activity.venue}</div>
                 </Item.Description>
                 <Item.Extra>
-                    <Button onClick={() => selectActivity(activity.id)} floated='right' content='View' color='blue'/>
+                    <Button as={Link} to={`/activities/${activity.id}`}floated='right' content='View' color='blue'/>
                     <Button onClick={(e) => deleteActivity(e, activity.id)} loading={target === activity.id && submitting} floated='right' content='Delete' color='red' name={activity.id}/>
                     <Label basic content={activity.category} />
                 </Item.Extra>

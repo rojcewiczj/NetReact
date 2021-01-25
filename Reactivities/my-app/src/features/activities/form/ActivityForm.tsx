@@ -1,15 +1,18 @@
-import React, { FormEvent, useState} from 'react'
+import React, { FormEvent, useContext, useState} from 'react'
 import { Segment, Form, FormInput, FormTextArea, Button } from 'semantic-ui-react'
+import ActivityStore from '../../../app/stores/activityStore';
 import { IActivity } from '../../../app/models/activity';
 import {v4 as uuid} from 'uuid';
+
+
 interface IProps {
-    setEditMode: (editMode: boolean) => void;
-    activity: IActivity
-    createActivity:(activity: IActivity) => void;
-    editActivity: (activity: IActivity) => void;
+  
+    activity: IActivity;
     submitting: boolean;
 }
-const ActivityForm: React.FC<IProps> = ({setEditMode, activity: initialFormState, createActivity, editActivity,submitting}) => {
+const ActivityForm: React.FC<IProps> = ({ activity: initialFormState, submitting}) => {
+    const activtiyStore = useContext(ActivityStore)
+    const {createActivity, editActivity, cancelFormOpen} = activtiyStore
     const initializeForm = () => {
         if(initialFormState) {
             return initialFormState;
@@ -56,7 +59,7 @@ const ActivityForm: React.FC<IProps> = ({setEditMode, activity: initialFormState
           <FormInput onChange={handleInputChange} name="city" placeholder='City'value={activity.city}/>
           <FormInput onChange={handleInputChange} name="venue" placeholder='Venue' value={activity.venue}/>
           <Button loading={submitting} floated='right' positive type='submit' content='Submit' />
-          <Button onClick={() => setEditMode(false)} floated='right' type='button' content='Cancel' />
+          <Button onClick={() => cancelFormOpen} floated='right' type='button' content='Cancel' />
 
       </Form>
   </Segment>
