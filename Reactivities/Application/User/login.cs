@@ -1,11 +1,15 @@
 ﻿using Domain;
 using FluentValidation;
 using MediatR;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Rest;
 using Persistence;
 using SQLitePCL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
@@ -32,16 +36,30 @@ namespace Application.User
         }
         public class Handler : IRequestHandler<Query, AppUser>
         {
+            private readonly UserManager<AppUser> _userManager;
+            private readonly SignInManager<AppUser> _signInManager;
 
-            private readonly DataContext _context;
-            public Handler(DataContext context)
+            public Handler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
             {
-                _context = context;
+                _userManager = userManager;
+                _signInManager = signInManager;
             }
 
-            public Task<AppUser> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<AppUser> Handle(Query request, CancellationToken cancellationToken)
             {
-                throw new NotImplementedException();
+                var user = await _userManager.FindByEmailAsync(request.Email);
+
+                if (user == null)
+                    throw new RestException(HttpStatusCode.Unauthorized.ToString());
+
+                var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
+
+                if(result.Succeeded)
+                {
+                    // TODO: generate token
+                    return user;
+                }
+                throw new RestException(HttpStatusCode.Unauthorized.ToString());
             }
         }
     }

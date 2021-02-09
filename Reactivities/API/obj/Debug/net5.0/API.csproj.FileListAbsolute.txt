@@ -83,3 +83,6 @@ C:\Users\rojce\Documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\Micro
 C:\Users\rojce\Documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\rojce\Documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\API.StaticWebAssets.xml
+C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\Microsoft.Rest.ClientRuntime.dll
+C:\Users\rojce\documents\GitHub\NetReact\Reactivities\API\bin\Debug\net5.0\Newtonsoft.Json.dll

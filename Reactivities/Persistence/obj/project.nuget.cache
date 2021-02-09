@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cK5ywKcu5qRyN+NLFCq+aVbhzZZk/1p1AYLKaZd2ZLi8rWTCIe/37/vLUST/Erj8KpxzHXmRl1Mz29vOsaGFNQ==",
+  "dgSpecHash": "S8bc/5+1Ov+FRILS5lP5mhWDaHajmDYqp2lovJ6sTxG0qG/oxx6+ro36LdxmrFmbtnkrnDrZX/1jgWUqndcvhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rojce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\rojce\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

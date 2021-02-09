@@ -4,6 +4,7 @@
     <PackageReference Include="FluentValidation" Version="9.5.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.22" />
   </ItemGroup>
 
   <ItemGroup>

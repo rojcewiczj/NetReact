@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj": {}
+    "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj": {
+    "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\rojce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Application\\obj\\",
+        "outputPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rojce\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj"
+              "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj"
+              "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -58,6 +58,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "Microsoft.Rest.ClientRuntime": {
+              "target": "Package",
+              "version": "[2.3.22, )"
             }
           },
           "imports": [
@@ -71,9 +75,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -82,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj": {
+    "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\rojce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rojce\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,9 +147,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -157,14 +155,14 @@
         }
       }
     },
-    "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\rojce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rojce\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -181,8 +179,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\rojce\\Documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj"
+              "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\rojce\\documents\\GitHub\\NetReact\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
@@ -221,9 +219,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
